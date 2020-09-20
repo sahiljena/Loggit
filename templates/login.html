@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} login {% endblock %}
+{% block body %}
+<br>
+<br>
+<br>
+<div class="form">
+    <form method="POST" id="login-v-signup">
+      <h2>Login</h2>
+      <p style='color:red;'>{{ err }}</p>
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <center><input type="submit" value="login"></center>
+      <br>
+      <a href="/forgot">Forgot Password?</a>
+      <a href="/signup">New User?</a>
+    </form>
+  </div>
+{% endblock%}
+
+

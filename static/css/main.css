@@ -1,0 +1,110 @@
+.form{
+    top: 45%;
+    left: 45%;
+    padding: 5px;
+  }
+  
+  #login-v-signup{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 400px;
+    font-family: rubik;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 8px;
+  }
+  #login-v-signup input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 370px;
+    padding: 10px;
+    font-size: 19px;
+    -webkit-box-shadow: inset 0px 0px 6px 0px rgba(50, 50, 50, 0.41);
+  -moz-box-shadow:    inset 0px 0px 6px 0px rgba(50, 50, 50, 0.41);
+  box-shadow:         inset 0px 0px 6px 0px rgba(50, 50, 50, 0.41);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  #login-v-signup input[type=submit]{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 400px;
+    padding: 4px;
+    box-shadow:  inset 0px 0px 0px 0px rgba(50, 50, 50, 0.65);
+    border: 2px solid #fff;
+    font-weight: bold;
+    background: #fff;
+    color: #000;
+  }
+  #login-v-signup input[type=submit]:hover{
+    background: #000;
+    color: #fff;
+  }
+  #login-v-signup h2{
+    margin-left: 5px;
+    border-bottom: 3px solid #000;
+    width: 60px;
+    padding: 4px;
+  }
+  #login-v-signup a{
+    margin-left: 5px;
+    text-decoration: none;
+    color:chartreuse;
+  }
+  #login-v-signup button{
+    background: #fff;
+    border: 0px;
+    color: blue;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #login-v-signup input:focus{
+    border: 2px solid #000;
+    outline-color: #000;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+  }
+  
+  ::-webkit-input-placeholder { /* Edge */
+    color: #fff;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::placeholder {
+    color: #fff;
+  }
+  body{
+    margin: 0;
+    background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  @media only screen and (max-width: 550px) {
+    #login-v-signup{
+       width: 89%;
+    }
+    #login-v-signup input{
+      width: 94%;
+    }
+    #login-v-signup input[type=submit]{
+      width: 100%;
+    }
+  }
+  

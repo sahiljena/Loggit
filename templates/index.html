@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index-s.css') }}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %}
+{% block title %} {{ name }}'s loggit {% endblock %}
+{% block body %}
+<nav id="main-screen-nav">
+    <a id="nav-ic"  href="hom">
+      <span class="material-icons"> account_circle</span>
+    </a>
+    <a  id="nav-ic" href="hom">
+      <span class="material-icons">search</span>
+    </a>
+    <a id="nav-ic" href="#openModal-about">
+      <span class="material-icons">edit</span>
+    </a>
+    <a id="nav-btn"  href="/logout">Logout</a>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+    <!--modals-->
+  <div id="openModal-about" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" style="float: right; transform: scale(1.2);"><span  class="material-icons">highlight_off</span></a>
+      <br>
+      <br>
+      <form id="add-log" method="POST" action="/post/">
+        <input type="text" name="heading" placeholder="Heading">
+        <textarea name="log">Add Logs Here!</textarea>
+        <br>
+        <br>
+        <input type="submit"  value="Log">
+      </form>
+     </div>
+ </div>
+<!--modals-->
+  {% if log_data %}
+    {% for i in log_data %}
+        <div class="content-box" id = {{ i[0]-1 }} >
+            <div class="circle danger">{{ i[0]-1 }}</div>
+            <div id="desc"> 
+                <h3>{{ i[1] }}</h3>
+                <p>{{ i[2] }}</p>
+            </div>
+        </div>
+        <div id="line"></div>
+    {% endfor %}
+  {% endif %}  
+  <center><a class="primary" id="add" href="#openModal-about">Add</a></center>
+{% endblock%}

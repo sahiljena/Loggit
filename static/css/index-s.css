@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  
+  .circle {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%; /* the magic */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: #45fc03;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto 40px;
+    font-family:Do Hyeon;
+  }
+  .content-box{
+    margin: 0 auto;
+    width: 390px;
+    display: block;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  #desc{
+    margin-top: -20px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    font-family: Rubik;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    /*
+    background: #000046;   fallback for old browsers 
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);   Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(to right, #1CB5E0, #000046);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .danger{
+      color: #ff005d;
+      border: 4px solid #ff005d; 
+        /* create a BIG glow */
+        box-shadow: 0px 0px 12px #ff005d; 
+        -moz-box-shadow: 0px 0px 12px #ff005d;
+        -webkit-box-shadow: 0px 0px 12px #ff005d;  
+    }
+  .okay{
+      color: #45fc03;
+      border: 4px solid #45fc03; 
+        /* create a BIG glow */
+        box-shadow: 0px 0px 12px  #45fc03; 
+        -moz-box-shadow: 0px 0px 12px  #45fc03;
+        -webkit-box-shadow: 0px 0px 12px  #45fc03;  
+    }
+  #line{
+    border: 2px solid #3c4557;
+    width: 0.001px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  #add{
+    margin: 0 auto;
+    border: 2px solid #4195fc;
+    border-radius: 8px;
+    padding: 5px 100px;
+    width: 100px;
+    cursor: pointer;
+    background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    font-size: 18px;
+    font-family: rubik;
+    text-decoration: none;
+  }
+  #add:focus{
+    color: grey;
+    outline: none;
+    content: "Loading..";
+  }
+  
+#add-log input{
+  width: 100%;
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 0px solid #fff;
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+  font-family: rubik;
+  font-size: 20px;
+  -webkit-box-shadow:inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow:inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+box-shadow:inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+  outline: none;
+  margin-top: 10px;
+ margin-left: -14px;
+
+}
+  .primary{
+      color: #4195fc;
+      border: 1px solid #4195fc; 
+        /* create a BIG glow */
+        box-shadow: 0px 0px 10px #4195fc; 
+        -moz-box-shadow: 0px 0px 10px #4195fc;
+        -webkit-box-shadow: 0px 0px 10px #4195fc;  
+    }
+  
+  .material-icons {
+    color: #fff;
+    transform: scale(1.2);
+  }
+  #main-screen-nav{
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+     position: fixed;
+    top: 0;
+    width: 100%;
+    background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  #main-screen-nav a{
+    text-decoration: none;
+  }
+  #nav-btn{
+    border-radius: 4px;
+    color: #141E30;
+    padding: 4px;
+    background: #fff;
+    font-family: Do Hyeon;
+    float: left;
+  }
+  #nav-ic{
+    float: right;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .modalDialog {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 99999;
+      opacity:0;
+      -webkit-transition: opacity 100ms ease-in;
+      -moz-transition: opacity 100ms ease-in;
+      transition: opacity 100ms ease-in;
+      pointer-events: none;
+    background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .modalDialog:target {
+      opacity:1;
+      pointer-events: auto;
+  }
+  .modalDialog > div {
+      width: 90vw;
+      position: relative;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 3px;
+      height: 98vh;
+    color: #000;
+    background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  
+  #add-log{
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center
+  }
+  #add-log textarea{
+    width: 100%;
+    background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 0px solid #fff;
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+    font-family: rubik;
+    font-size: 20px;
+    -webkit-box-shadow:inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow:inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+  box-shadow:inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+    outline: none;
+    height: 70vh;
+    margin-top: 10px;
+   margin-left: -14px;
+  
+  }
+  #add-log:focus{
+    outline: none;
+  }
+  #add-log input[type=submit]{
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #fff;
+    background: #fff;
+    color: #000;
+    width: 120px;
+    font-weight: bold;
+  }
+  #add-log input[type=submit]:hover{
+    background: Transparent;
+    color: #fff;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .content-box{
+      width: 80%;
+    }
+    #desc{
+      width: 94%;
+    }
+  }
+  
