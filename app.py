@@ -11,22 +11,7 @@ with sqlite3.connect("users.db") as conn:
     c.execute(l)
     conn.commit()
 
-'''
-class User:
-    def __init__(self,id,username,password):
-        self.id = id
-        self.username = username
-        self.password = password
-    def __repr__(self):
-        return f'<User:{self.username}>'
 
-users = []
-users.append(User(id=1, username = "admin", password = "admin"))
-new=[]
-for i in users:
-     new.append(i)
-print(new[0].username)
-'''
 
 
 
@@ -85,14 +70,7 @@ def login():
 
             username = request.form['username']
             password = request.form['password']
-
-            '''
-
-            user = []
-            for i in users:
-                if i.username == username:
-                    user.append(i)
-            '''
+            
             data = []
             with sqlite3.connect("users.db") as conn:
                 c = conn.cursor()
