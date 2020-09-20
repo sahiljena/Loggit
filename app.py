@@ -70,7 +70,7 @@ def login():
 
             username = request.form['username']
             password = request.form['password']
-            
+
             data = []
             with sqlite3.connect("users.db") as conn:
                 c = conn.cursor()
@@ -99,7 +99,6 @@ def index():
             c.execute(l)
             data = c.fetchall()
         return render_template('index.html',name = username, log_data = data, err = err)
-
 @app.route('/logout')
 def logout():
     session.pop('user_id',None)
