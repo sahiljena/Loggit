@@ -11,3 +11,6 @@ Project made with Flask that helps you log your daily progress ,ie 100DaysOfCode
 <br>
 I will improve it soon!
 </p>
+<h1>Contact</h1>
+<li><a href="https://www.instagram.com/sahiljena_/">Intsagram</a></li>
+<li><a href="https://twitter.com/Sahiljena7">Twitter</a></li>
